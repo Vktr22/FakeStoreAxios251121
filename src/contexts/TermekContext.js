@@ -1,6 +1,7 @@
  import React, { useState, useEffect, createContext } from "react";
 import axios from "axios";
-
+//itt vannak a függvények, amik hook-ok -> ez a state, amivel működik
+// itt hozom létre a contextet és a providert)
 export const TermekContext = createContext("");
 
 export const TermekProvider = ({ children }) => {
