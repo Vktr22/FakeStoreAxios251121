@@ -3,14 +3,14 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/css/bootstrap.min.css";      //bootstrap css betöltése
 import { TermekProvider } from "./contexts/TermekContext";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <TermekProvider>
-      <App />
+      <App />   {/*ölelgetjük a context providerrel az appot, hogy az appon belül elérhető legyen a context*/}
     </TermekProvider>
   </React.StrictMode>
 );

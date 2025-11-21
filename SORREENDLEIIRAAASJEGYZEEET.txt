@@ -1,0 +1,12 @@
+1. index.js
+2. app.js
+3. app.css
+4. létreh.:
+    src>components>TermekekAdmin.js
+                  >TermekSorAdmin.js
+        >context>TermekContext.js
+5. TermekekAdmin.js
+6. TermekSorAdmin.js
+7. TermekContext.js
+8. TermekUrlap.js --- itt már én is
+    
