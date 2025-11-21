@@ -19,7 +19,7 @@ export default function TermekekAdmin() {
             </thead>
             <tbody>
                 {termekLista?termekLista.map( (termek)=>{
-                    return <TermekSorAdmin termek={termek} key={termek.id} />{/**2. itt adod át a termék sornak a paraméterét */}
+                    return <TermekSorAdmin termek={termek} key={termek.id} />;{/**2. itt adod át a termék sornak a paraméterét */}
                 }
 
                 ):"Nincs adaat"}
