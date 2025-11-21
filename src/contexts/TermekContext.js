@@ -38,6 +38,22 @@ export const TermekProvider = ({ children }) => {
         // always executed
       });
   }
+  //ezt már én csin, az ürlaphoz(ez még cvsak példa)
+  function deleteTermek(adat) {
+      console.log(adat);
+      axios
+        .delete("https://fakestoreapi.com/products"+"/"+adat.id)
+        .then(function (response) {
+          console.log(response);
+          setTermekLista(prevLista => prevLista.filter(termek => termek.id !== adat.id));
+          
+        })
+        .catch(function (error) {
+          console.log(error);
+        });
+    }
+
+  //------------------------------------------------------------ez alatt use, e fölött függvények
   /*
   useEffect asszinkron működések esetén használjuk, és beállíthatunk függőségeket a második paraméterében
   */
